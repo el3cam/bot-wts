@@ -5,9 +5,9 @@ import {IDatabase, adapterDB} from './json-database';
 import {BaileysProvider as Provider} from '@builderbot/provider-baileys'
 import {query} from './mysql';
 
-// const args = process.argv.slice(2);
-// const PORT = args[0] ? parseInt(args[0], 10) : (process.env.PORT ?? 3008);
-const PORT = process.env.PORT ?? 3008;
+const args = process.argv.slice(2);
+const PORT = args[0] ? parseInt(args[0], 10) : (process.env.PORT ?? 3008);
+// const PORT = process.env.PORT ?? 3008;
 const main = async () => {
 
   const adapterProvider = createProvider(Provider)
