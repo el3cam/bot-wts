@@ -17,9 +17,6 @@ const main = async () => {
     provider: adapterProvider,
     database: adapterDB,
   })
-  adapterProvider.on('ready', (a) => {
-    console.log('auth_failure', a)
-  });
 
   adapterProvider.server.post(
     '/v1/messages',
