@@ -71,6 +71,7 @@ const main = async () => {
       messageTimestamp,
       'received',
     ]);
+    
   })
   adapterProvider.on('host', (a, b) => {
     // comprobar que la taba que tiene el nombre del numero exista si no crearla
